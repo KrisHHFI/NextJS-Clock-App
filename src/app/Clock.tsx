@@ -16,13 +16,13 @@ const Clock: React.FC = () => {
   const secondHandRef = useRef<HTMLDivElement | null>(null);
 
   // Refs for the images
-  const secondHandGearRef = useRef<HTMLDivElement | null>(null);
-  const secondHandGear2Ref = useRef<HTMLDivElement | null>(null);
-  const signedGearRef = useRef<HTMLDivElement | null>(null);
-  const signedGearBulkierRef = useRef<HTMLDivElement | null>(null);
-  const signedGearSmallRef = useRef<HTMLDivElement | null>(null);
-  const minuteHandGearRef = useRef<HTMLDivElement | null>(null);
-  const hourHandGearRef = useRef<HTMLDivElement | null>(null);
+  const secondHandGearRef = useRef<HTMLImageElement | null>(null);
+  const secondHandGear2Ref = useRef<HTMLImageElement | null>(null);
+  const signedGearRef = useRef<HTMLImageElement | null>(null);
+  const signedGearBulkierRef = useRef<HTMLImageElement | null>(null);
+  const signedGearSmallRef = useRef<HTMLImageElement | null>(null);
+  const minuteHandGearRef = useRef<HTMLImageElement | null>(null);
+  const hourHandGearRef = useRef<HTMLImageElement | null>(null);
 
   useEffect(() => {
     const updateClock = () => {
@@ -112,72 +112,65 @@ const Clock: React.FC = () => {
               width={100}
               height={100}
             />
-            <div id="date" ref={dateRef}></div>
+            <div id="date"  className="date" ref={dateRef}></div>
           </div>
           <div id="gears" className="gears">
-            <div ref={hourHandGearRef}>
-              <Image
-                src="/Hour Hand Gear.svg"
-                alt="Hour Hand Gear"
-                className="hourHandGearImage clockCentre"
-                width={100}
-                height={100}
-              />
-            </div>
-            <div ref={signedGearSmallRef}>
-              <Image
-                src="/Signed Gear 3.svg"
-                alt="Signed Gear Small"
-                className="signedGearImageSmall"
-                width={100}
-                height={100}
-              />
-            </div>
-            <div ref={signedGearRef}>
-              <Image
-                src="/Signed Gear.svg"
-                alt="Signed Gear"
-                className="signedGearImage"
-                width={100}
-                height={100}
-              />
-            </div>
-            <div ref={minuteHandGearRef}>
-              <Image
-                src="/Minute Hand Gear.svg"
-                alt="Minute Hand Gear"
-                className="minuteHandGearImage clockCentre"
-                width={100}
-                height={100}
-              />
-            </div>
-            <div ref={signedGearBulkierRef}>
-              <Image
-                src="/Signed Gear 2.svg"
-                alt="Signed Gear Bulkier"
-                className="signedGearBulkierImage"
-                width={100}
-                height={100}
-              />
-            </div>
-            <div ref={secondHandGearRef}>
-              <Image
-                src="/Second Hand Gear.svg"
-                alt="Second Hand Gear"
-                className="secondHandGearImage clockCentre"
-                width={100}
-                height={100}
-              />
-            </div>
-            <div ref={secondHandGear2Ref}>
-              <Image
-                src="/Second Hand Gear 2.svg"
-                alt="Second Hand Gear 2"
-                className="secondHandGearImage2"
-                width={100}
-                height={100}
-              />
-            </div>
+            <Image
+              src="/Hour Hand Gear.svg"
+              alt="Hour Hand Gear"
+              className="hourHandGearImage clockCentre"
+              width={100}
+              height={100}
+              ref={hourHandGearRef}
+            />
+            <Image
+              src="/Signed Gear 3.svg"
+              alt="Signed Gear Small"
+              className="signedGearImageSmall"
+              width={100}
+              height={100}
+              ref={signedGearSmallRef}
+            />
+            <Image
+              src="/Signed Gear.svg"
+              alt="Signed Gear"
+              className="signedGearImage"
+              width={100}
+              height={100}
+              ref={signedGearRef}
+            />
+            <Image
+              src="/Minute Hand Gear.svg"
+              alt="Minute Hand Gear"
+              className="minuteHandGearImage clockCentre"
+              width={100}
+              height={100}
+              ref={minuteHandGearRef}
+            />
+            <Image
+              src="/Signed Gear 2.svg"
+              alt="Signed Gear Bulkier"
+              className="signedGearBulkierImage"
+              width={100}
+              height={100}
+              ref={signedGearBulkierRef}
+            />
+            <Image
+              src="/Second Hand Gear.svg"
+              alt="Second Hand Gear"
+              className="secondHandGearImage clockCentre"
+              width={100}
+              height={100}
+              ref={secondHandGearRef}
+            />
+            <Image
+              src="/Second Hand Gear 2.svg"
+              alt="Second Hand Gear 2"
+              className="secondHandGearImage2"
+              width={100}
+              height={100}
+              ref={secondHandGear2Ref}
+            />
           </div>
           <div id="hands" className="clockCentre">
             <div className="handBase"></div>
