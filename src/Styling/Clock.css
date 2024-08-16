@@ -33,6 +33,7 @@ body {
 /* ------------ alphanumerics ------------*/
 
 .alphanumerics p {
+    color: black;
     position: absolute;
     transform: translate(-50%, -50%);
     font-size: 30px;
@@ -196,8 +197,6 @@ body {
     transform-origin: center bottom;
 }
 
-/* Gears */
-
 .secondHandGear {
     width: 100px;
     height: 100px;
@@ -256,5 +255,7 @@ body {
 }
 
 .gears {
+ 
+    transform: translate(-50%, -50%);
     display: none;
 }

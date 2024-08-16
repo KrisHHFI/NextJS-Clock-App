@@ -56,33 +56,33 @@ const Clock: React.FC = () => {
       if (hourHandGearRef.current) hourHandGearRef.current.style.transform = `translate(-50%, -50%) rotate(${hourRotation}deg)`;
     };
 
-    const clockInteriorToggle = () => {
-      const clockFace = document.querySelector('.face') as HTMLElement;
-      const alphanumerics = document.querySelectorAll('.alphanumerics') as NodeListOf<HTMLElement>;
-      const gears = document.querySelectorAll('.gears') as NodeListOf<HTMLElement>;
+    // Update the clock every 100 milliseconds
+    const interval = setInterval(updateClock, 100);
+    
+    // Clean up the interval on component unmount
+    return () => clearInterval(interval);
+  }, []); // Empty dependency array to only run on mount and unmount
 
+  useEffect(() => {
+    const clockFace = document.querySelector('.face') as HTMLElement;
+    const alphanumerics = document.querySelectorAll('.alphanumerics') as NodeListOf<HTMLElement>;
+    const gears = document.querySelectorAll('.gears') as NodeListOf<HTMLElement>;
+
+    if (clockFace) {
       if (toggle) {
-        if (clockFace) clockFace.style.backgroundColor = '#fffcf5';
+        clockFace.style.backgroundColor = '#fffcf5';
         alphanumerics.forEach(alphanumeric => alphanumeric.style.display = 'block');
         gears.forEach(gear => gear.style.display = 'none');
       } else {
-        if (clockFace) clockFace.style.backgroundColor = 'transparent';
+        clockFace.style.backgroundColor = 'transparent';
         alphanumerics.forEach(alphanumeric => alphanumeric.style.display = 'none');
         gears.forEach(gear => gear.style.display = 'block');
       }
-
-      setToggle(!toggle);
-    };
-
-    clockInteriorToggle();
-    updateClock();
-    const interval = setInterval(updateClock, 100); // Update every 100 milliseconds
-
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, [toggle]);
+    }
+  }, [toggle]); // Dependency on toggle to update the clock face display
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+    <main>
       <div className="clock">
         <Image
           src="/Clock Case.png"
