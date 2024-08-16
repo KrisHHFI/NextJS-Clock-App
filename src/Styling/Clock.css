@@ -1,0 +1,260 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.clock {
+    position: relative;
+    height: 700px;
+    width: 700px;
+    margin: auto;
+}
+
+.clockCentre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clockCaseImage {
+    height: 700px;
+    width: 700px;
+    clip-path: circle(312px at center);
+}
+
+.face {
+    height: 550px;
+    width: 550px;
+    background-color: #fffcf5;
+    border-radius: 50%;
+}
+
+/* ------------ alphanumerics ------------*/
+
+.alphanumerics p {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.date {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    top: 82%;
+    left: 50%;
+    border: 4px solid #b37922;
+    padding: 0px 8px 0px 8px;
+}
+
+.twelve {
+    top: 0;
+    left: 50%;
+}
+
+.one {
+    top: 6%;
+    left: 72%;
+}
+
+.two {
+    top: 21%;
+    left: 90%;
+}
+
+.three {
+    top: 45%;
+    left: 96%;
+}
+
+.four {
+    top: 68%;
+    left: 90%;
+}
+
+.five {
+    top: 84%;
+    left: 73%;
+}
+
+.six {
+    top: 90%;
+    left: 50%;
+}
+
+.seven {
+    top: 84%;
+    left: 27%;
+}
+
+.eight {
+    top: 68%;
+    left: 10%;
+}
+
+.nine {
+    top: 45%;
+    left: 4%;
+}
+
+.ten {
+    top: 22%;
+    left: 10%;
+}
+
+.eleven {
+    top: 6%;
+    left: 28%;
+}
+
+.signature {
+    top: 89%;
+    left: 50%;
+    height: 118px;
+}
+
+/* Hands */
+
+.handBase {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.minuteHand {
+    height: 40px;
+    width: 8px;
+    background-color: black;
+    transform-origin: center bottom;
+}
+
+.minuteHandInvertedPointer {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 30px solid black;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    transform-origin: center bottom;
+}
+
+.minuteHandPointer {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 215px solid black;
+    position: absolute;
+    top: -215px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center bottom;
+}
+
+.hourHand {
+    height: 40px;
+    width: 8px;
+    background-color: black;
+    transform-origin: center bottom;
+}
+
+.hourHandInvertedPointer {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 30px solid black;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    transform-origin: center bottom;
+}
+
+.hourHandPointer {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 150px solid black;
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center bottom;
+}
+
+.secondHand {
+    height: 250px;
+    width: 7px;
+    background-color: black;
+    transform-origin: center bottom;
+}
+
+/* Gears */
+
+.secondHandGear {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%
+}
+
+.secondHandGearImage {
+    height: 100px;
+    width: 100px;
+}
+
+.signedGearImage {
+    position: absolute;
+    top: 50%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 150px;
+}
+
+.signedGearBulkierImage {
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+}
+
+.signedGearImageSmall {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 72%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+}
+
+.secondHandGearImage2 {
+    position: absolute;
+    top: 50%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+    height: 340px;
+    width: 340px;
+}
+
+.minuteHandGearImage {
+    height: 180px;
+    width: 180px;
+}
+
+.hourHandGearImage {
+    height: 275px;
+    width: 275px;
+}
+
+.gears {
+    display: none;
+}
