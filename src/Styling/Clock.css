@@ -115,34 +115,34 @@ body {
 .signature {
     top: 89%;
     left: 50%;
-    height: 118px;
-    width: auto;
+    height: auto;
+    width: 16.5vw;
 }
 
 /* Hands */
 
 .handBase {
-    height: 25px;
-    width: 25px;
+    height: 1.7vw;
+    width: 1.7vw;
     background-color: black;
     border-radius: 50%;
 }
 
 .minuteHand {
-    height: 40px;
-    width: 8px;
     background-color: black;
+    height: 2.7vw;
     transform-origin: center bottom;
+    width: 0.5vw;
 }
 
 .minuteHandInvertedPointer {
     width: 0;
     height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 30px solid black;
+    border-left: 0.5vw solid transparent;
+    border-right: 0.5vw solid transparent;
+    border-bottom: 2vw solid black;
     position: absolute;
-    top: -30px;
+    top: -2vw;
     left: 50%;
     transform: translateX(-50%) rotate(180deg);
     transform-origin: center bottom;
@@ -151,19 +151,20 @@ body {
 .minuteHandPointer {
     width: 0;
     height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 215px solid black;
+    border-left: 0.5vw solid transparent;
+    border-right: 0.5vw solid transparent;
+    border-bottom: 14.6vw solid black;
     position: absolute;
     top: -215px;
+    top: -14.5vw;
     left: 50%;
     transform: translateX(-50%);
     transform-origin: center bottom;
 }
 
 .hourHand {
-    height: 40px;
-    width: 8px;
+    height: 2.7vw;
+    width: 0.5vw;
     background-color: black;
     transform-origin: center bottom;
 }
@@ -173,7 +174,7 @@ body {
     height: 0;
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
-    border-bottom: 30px solid black;
+    border-bottom: 30px solid red;
     position: absolute;
     top: -30px;
     left: 50%;
