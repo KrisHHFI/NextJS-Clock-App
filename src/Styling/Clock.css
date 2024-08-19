@@ -172,11 +172,11 @@ body {
 .hourHandInvertedPointer {
     width: 0;
     height: 0;
-    border-left: 11px solid transparent;
-    border-right: 11px solid transparent;
-    border-bottom: 30px solid red;
+    border-left: 0.75vw solid transparent;
+    border-right: 0.75vw solid transparent;
+    border-bottom: 2vw solid black;
     position: absolute;
-    top: -30px;
+    top: -2vw;
     left: 50%;
     transform: translateX(-50%) rotate(180deg);
     transform-origin: center bottom;
@@ -185,19 +185,19 @@ body {
 .hourHandPointer {
     width: 0;
     height: 0;
-    border-left: 11px solid transparent;
-    border-right: 11px solid transparent;
-    border-bottom: 150px solid black;
+    border-left: 0.8vw solid transparent;
+    border-right: 0.8vw solid transparent;
+    border-bottom: 10.2vw solid black;
     position: absolute;
-    top: -150px;
+    top: -10.2vw;
     left: 50%;
     transform: translateX(-50%);
     transform-origin: center bottom;
 }
 
 .secondHand {
-    height: 250px;
-    width: 7px;
+    height: 17vw;
+    width: 0.5vw;
     background-color: black;
     transform-origin: center bottom;
 }
