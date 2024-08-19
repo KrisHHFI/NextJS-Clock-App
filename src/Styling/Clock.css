@@ -37,7 +37,8 @@ body {
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 2.1vw;
+
 }
 
 .date {
@@ -45,10 +46,10 @@ body {
     position: absolute;
     transform: translate(-50%, -50%);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 1.4vw;
     top: 82%;
     left: 50%;
-    border: 4px solid #b37922;
+    border: 0.3vw solid #b37922;
     padding: 0px 8px 0px 8px;
 }
 
