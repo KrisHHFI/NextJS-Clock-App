@@ -202,15 +202,11 @@ body {
     transform-origin: center bottom;
 }
 
-.secondHandGear {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%
-}
+/* Gears */
 
 .secondHandGearImage {
-    height: 100px;
-    width: 100px;
+    height: 6.5vw;
+    width: 6.5vw;
 }
 
 .signedGearImage {
@@ -218,13 +214,13 @@ body {
     top: 50%;
     left: 83%;
     transform: translate(-50%, -50%);
-    height: 150px;
-    width: 150px;
+    height: 10.1vw;
+    width: 10.1vw;
 }
 
 .signedGearBulkierImage {
-    height: 180px;
-    width: 180px;
+    height: 12.2vw;
+    width: 12.2vw;
     position: absolute;
     top: 28%;
     left: 28%;
@@ -232,8 +228,8 @@ body {
 }
 
 .signedGearImageSmall {
-    height: 100px;
-    width: 100px;
+    height: 6.8vw;
+    width: 6.8vw;
     position: absolute;
     top: 72%;
     left: 27%;
@@ -245,20 +241,20 @@ body {
     top: 50%;
     left: 69%;
     transform: translate(-50%, -50%);
-    height: 340px;
-    width: 340px;
+    height: 23vw;
+    width: 23vw;
 }
 
 .minuteHandGearImage {
-    height: 180px;
-    width: 180px;
+    height: 12.3vw;
+    width: 12.3vw;
 }
 
 .hourHandGearImage {
-    height: 275px;
-    width: 275px;
+    height: 18.8vw;
+    width: 18.8vw;
 }
 
 .gears {
-     display: none;
+    display: none;
 }
