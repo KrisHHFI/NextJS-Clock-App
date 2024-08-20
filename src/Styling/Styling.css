@@ -270,18 +270,25 @@ body {
 
 .contactIcon {
     height: auto;
-    padding-right: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
     width: 20px;
+}
+
+.ContactBoxIconContainer {
+    padding-right: 20px;
+}
+
+.contactIcon:hover {
+    transform: scale(1.2);
 }
 
 .ContactBoxIcons {
     display: flex;
+    align-items: center;
     padding-bottom: 10px;
 }
 
-.ContactBoxText {
-
-}
+.ContactBoxText {}
 
 
 /* Clock Viewport */
@@ -335,7 +342,8 @@ body {
 
     .hourHand {
         height: 4.59vw;
-        width: 0.9vw; /* Corrected width */
+        width: 0.9vw;
+        /* Corrected width */
     }
 
     .hourHandInvertedPointer {
@@ -346,8 +354,10 @@ body {
     }
 
     .hourHandPointer {
-        border-left: 1.2vw solid transparent; /* Adjusted width */
-        border-right: 1.2vw solid transparent; /* Adjusted width */
+        border-left: 1.2vw solid transparent;
+        /* Adjusted width */
+        border-right: 1.2vw solid transparent;
+        /* Adjusted width */
         border-bottom: 15.75vw solid black;
         top: -15.75vw;
     }
