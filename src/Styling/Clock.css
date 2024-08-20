@@ -259,3 +259,111 @@ body {
 .gears {
     display: none;
 }
+
+@media (max-width: 600px) {
+    .clockCaseImage {
+        clip-path: circle(38.34vw at center);
+        width: 85.86vw;
+    }
+
+    .face {
+        height: 67.5vw;
+        width: 67.5vw;
+    }
+
+    .alphanumerics p {
+        font-size: 3.78vw;
+    }
+
+    .date {
+        font-size: 2.52vw;
+        border: 0.54vw solid #b37922;
+    }
+
+    .signature {
+        width: 29.7vw;
+    }
+
+    .handBase {
+        height: 2.89vw;
+        width: 2.89vw;
+    }
+
+    .minuteHand {
+        height: 4.59vw;
+        width: 0.9vw;
+    }
+
+    .minuteHandInvertedPointer {
+        border-left: 0.9vw solid transparent;
+        border-right: 0.9vw solid transparent;
+        border-bottom: 3.6vw solid black;
+        top: -3.6vw;
+    }
+
+    .minuteHandPointer {
+        border-left: 0.9vw solid transparent;
+        border-right: 0.9vw solid transparent;
+        border-bottom: 26.1vw solid black;
+        top: -26.1vw;
+    }
+
+    .hourHand {
+        height: 4.59vw;
+        width: 0.9vw; /* Corrected width */
+    }
+
+    .hourHandInvertedPointer {
+        border-left: 1.35vw solid transparent;
+        border-right: 1.35vw solid transparent;
+        border-bottom: 3.6vw solid black;
+        top: -3.6vw;
+    }
+
+    .hourHandPointer {
+        border-left: 1.2vw solid transparent; /* Adjusted width */
+        border-right: 1.2vw solid transparent; /* Adjusted width */
+        border-bottom: 15.75vw solid black;
+        top: -15.75vw;
+    }
+
+    .secondHand {
+        height: 28.9vw;
+        width: 0.9vw;
+    }
+
+    .secondHandGearImage {
+        height: 11.05vw;
+        width: 11.05vw;
+    }
+
+    .signedGearImage {
+        height: 18.18vw;
+        width: 18.18vw;
+    }
+
+    .signedGearBulkierImage {
+        height: 21.85vw;
+        width: 21.85vw;
+    }
+
+    .signedGearImageSmall {
+        height: 12.24vw;
+        width: 12.24vw;
+    }
+
+    .secondHandGearImage2 {
+        height: 39.1vw;
+        width: 39.1vw;
+    }
+
+    .minuteHandGearImage {
+        height: 22.05vw;
+        width: 22.05vw;
+    }
+
+    .hourHandGearImage {
+        height: 31.8vw;
+        width: 31.8vw;
+    }
+}

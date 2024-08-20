@@ -88,8 +88,8 @@ const Clock: React.FC = () => {
           src="/Clock Case.png"
           alt="Clock Case"
           className="clockCaseImage clockCentre"
-          width={300}
-          height={300}
+          width={100}
+          height={100}
         />
         <div className="face clockCentre" onClick={() => setToggle(prev => !prev)}>
           <div id="alphanumerics" className="alphanumerics">
