@@ -18,6 +18,7 @@ body {
 }
 
 .clockCaseImage {
+    cursor: pointer;
     clip-path: circle(21.3vw at center);
     height: auto;
     width: 47.7vw;
@@ -28,6 +29,7 @@ body {
     width: 37.5vw;
     background-color: #fffcf5;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 /* ------------ alphanumerics ------------*/
