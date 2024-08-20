@@ -260,6 +260,31 @@ body {
     display: none;
 }
 
+/* Signature Box */
+.ContactBox {
+    bottom: 10px;
+    color: white;
+    position: absolute;
+    right: 10px;
+}
+
+.contactIcon {
+    height: auto;
+    padding-right: 15px;
+    width: 20px;
+}
+
+.ContactBoxIcons {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.ContactBoxText {
+
+}
+
+
+/* Clock Viewport */
 @media (max-width: 600px) {
     .clockCaseImage {
         clip-path: circle(38.34vw at center);
