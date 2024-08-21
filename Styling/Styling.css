@@ -1,0 +1,406 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.clock {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+}
+
+.clockCentre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clockCaseImage {
+    cursor: pointer;
+    clip-path: circle(21.3vw at center);
+    height: auto;
+    width: 47.7vw;
+}
+
+.face {
+    height: 37.5vw;
+    width: 37.5vw;
+    background-color: #fffcf5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ------------ alphanumerics ------------*/
+
+.alphanumerics p {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 2.1vw;
+
+}
+
+.date {
+    color: black;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4vw;
+    top: 82%;
+    left: 50%;
+    border: 0.3vw solid #b37922;
+    padding: 0px 8px 0px 8px;
+}
+
+.twelve {
+    top: 0;
+    left: 50%;
+}
+
+.one {
+    top: 6%;
+    left: 72%;
+}
+
+.two {
+    top: 21%;
+    left: 90%;
+}
+
+.three {
+    top: 45%;
+    left: 96%;
+}
+
+.four {
+    top: 68%;
+    left: 90%;
+}
+
+.five {
+    top: 84%;
+    left: 73%;
+}
+
+.six {
+    top: 90%;
+    left: 50%;
+}
+
+.seven {
+    top: 84%;
+    left: 27%;
+}
+
+.eight {
+    top: 68%;
+    left: 10%;
+}
+
+.nine {
+    top: 45%;
+    left: 4%;
+}
+
+.ten {
+    top: 22%;
+    left: 10%;
+}
+
+.eleven {
+    top: 6%;
+    left: 28%;
+}
+
+.signature {
+    top: 89%;
+    left: 50%;
+    height: auto;
+    width: 16.5vw;
+}
+
+/* Hands */
+
+.handBase {
+    height: 1.7vw;
+    width: 1.7vw;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.minuteHand {
+    background-color: black;
+    height: 2.7vw;
+    transform-origin: center bottom;
+    width: 0.5vw;
+}
+
+.minuteHandInvertedPointer {
+    width: 0;
+    height: 0;
+    border-left: 0.5vw solid transparent;
+    border-right: 0.5vw solid transparent;
+    border-bottom: 2vw solid black;
+    position: absolute;
+    top: -2vw;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    transform-origin: center bottom;
+}
+
+.minuteHandPointer {
+    width: 0;
+    height: 0;
+    border-left: 0.5vw solid transparent;
+    border-right: 0.5vw solid transparent;
+    border-bottom: 14.6vw solid black;
+    position: absolute;
+    top: -215px;
+    top: -14.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center bottom;
+}
+
+.hourHand {
+    height: 2.7vw;
+    width: 0.5vw;
+    background-color: black;
+    transform-origin: center bottom;
+}
+
+.hourHandInvertedPointer {
+    width: 0;
+    height: 0;
+    border-left: 0.75vw solid transparent;
+    border-right: 0.75vw solid transparent;
+    border-bottom: 2vw solid black;
+    position: absolute;
+    top: -2vw;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    transform-origin: center bottom;
+}
+
+.hourHandPointer {
+    width: 0;
+    height: 0;
+    border-left: 0.8vw solid transparent;
+    border-right: 0.8vw solid transparent;
+    border-bottom: 10.2vw solid black;
+    position: absolute;
+    top: -10.2vw;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center bottom;
+}
+
+.secondHand {
+    height: 17vw;
+    width: 0.5vw;
+    background-color: black;
+    transform-origin: center bottom;
+}
+
+/* Gears */
+
+.secondHandGearImage {
+    height: 6.5vw;
+    width: 6.5vw;
+}
+
+.signedGearImage {
+    position: absolute;
+    top: 50%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    height: 10.1vw;
+    width: 10.1vw;
+}
+
+.signedGearBulkierImage {
+    height: 12.2vw;
+    width: 12.2vw;
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+}
+
+.signedGearImageSmall {
+    height: 6.8vw;
+    width: 6.8vw;
+    position: absolute;
+    top: 72%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+}
+
+.secondHandGearImage2 {
+    position: absolute;
+    top: 50%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+    height: 23vw;
+    width: 23vw;
+}
+
+.minuteHandGearImage {
+    height: 12.3vw;
+    width: 12.3vw;
+}
+
+.hourHandGearImage {
+    height: 18.8vw;
+    width: 18.8vw;
+}
+
+.gears {
+    display: none;
+}
+
+/* Signature Box */
+.ContactBox {
+    bottom: 10px;
+    color: white;
+    position: absolute;
+    right: 10px;
+}
+
+.contactIcon {
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    width: 20px;
+}
+
+.ContactBoxIconContainer {
+    padding-right: 20px;
+}
+
+.contactIcon:hover {
+    transform: scale(1.2);
+}
+
+.ContactBoxIcons {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.ContactBoxText {}
+
+
+/* Clock Viewport */
+@media (max-width: 600px) {
+    .clockCaseImage {
+        clip-path: circle(38.34vw at center);
+        width: 85.86vw;
+    }
+
+    .face {
+        height: 67.5vw;
+        width: 67.5vw;
+    }
+
+    .alphanumerics p {
+        font-size: 3.78vw;
+    }
+
+    .date {
+        font-size: 2.52vw;
+        border: 0.54vw solid #b37922;
+    }
+
+    .signature {
+        width: 29.7vw;
+    }
+
+    .handBase {
+        height: 2.89vw;
+        width: 2.89vw;
+    }
+
+    .minuteHand {
+        height: 4.59vw;
+        width: 0.9vw;
+    }
+
+    .minuteHandInvertedPointer {
+        border-left: 0.9vw solid transparent;
+        border-right: 0.9vw solid transparent;
+        border-bottom: 3.6vw solid black;
+        top: -3.6vw;
+    }
+
+    .minuteHandPointer {
+        border-left: 0.9vw solid transparent;
+        border-right: 0.9vw solid transparent;
+        border-bottom: 26.1vw solid black;
+        top: -26.1vw;
+    }
+
+    .hourHand {
+        height: 4.59vw;
+        width: 0.9vw;
+        /* Corrected width */
+    }
+
+    .hourHandInvertedPointer {
+        border-left: 1.35vw solid transparent;
+        border-right: 1.35vw solid transparent;
+        border-bottom: 3.6vw solid black;
+        top: -3.6vw;
+    }
+
+    .hourHandPointer {
+        border-left: 1.2vw solid transparent;
+        /* Adjusted width */
+        border-right: 1.2vw solid transparent;
+        /* Adjusted width */
+        border-bottom: 15.75vw solid black;
+        top: -15.75vw;
+    }
+
+    .secondHand {
+        height: 28.9vw;
+        width: 0.9vw;
+    }
+
+    .secondHandGearImage {
+        height: 11.05vw;
+        width: 11.05vw;
+    }
+
+    .signedGearImage {
+        height: 18.18vw;
+        width: 18.18vw;
+    }
+
+    .signedGearBulkierImage {
+        height: 21.85vw;
+        width: 21.85vw;
+    }
+
+    .signedGearImageSmall {
+        height: 12.24vw;
+        width: 12.24vw;
+    }
+
+    .secondHandGearImage2 {
+        height: 39.1vw;
+        width: 39.1vw;
+    }
+
+    .minuteHandGearImage {
+        height: 22.05vw;
+        width: 22.05vw;
+    }
+
+    .hourHandGearImage {
+        height: 31.8vw;
+        width: 31.8vw;
+    }
+}
