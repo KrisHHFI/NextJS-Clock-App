@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import "../Styling/Styling.css"; // Ensure this is a global stylesheet
 
 const fullTurn = 360;
 

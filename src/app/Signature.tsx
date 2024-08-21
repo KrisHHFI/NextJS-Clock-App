@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import "../Styling/Styling.css";
 import Image from "next/image";
 
 const Signature: React.FC = () => {
