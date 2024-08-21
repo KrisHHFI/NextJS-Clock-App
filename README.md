@@ -1,6 +1,6 @@
 # NextJS-Clock-App
 
-<img src=""/>
+<img src="GitHub-Promo-Image.gif"/>
 
 ### Launch the App
 
