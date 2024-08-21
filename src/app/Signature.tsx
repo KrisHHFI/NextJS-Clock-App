@@ -5,6 +5,9 @@ import "../Styling/Styling.css";
 import Image from "next/image";
 
 const Signature: React.FC = () => {
+
+  const assetPrefix = process.env.NODE_ENV === 'production' ? '/NextJS-Clock-App' : '';
+
   return (
     <main>
       <div className="ContactBox">
@@ -16,7 +19,7 @@ const Signature: React.FC = () => {
             rel="noopener noreferrer"
           >
             <Image
-              src="/Envelope.png"
+              src={`${assetPrefix}/Envelope.png`}
               alt="Envelope Icon"
               className="contactIcon"
               width={100}
@@ -30,7 +33,7 @@ const Signature: React.FC = () => {
             rel="noopener noreferrer"
           >
             <Image
-              src="/GitHub.png"
+              src={`${assetPrefix}/GitHub.png`}
               alt="GitHub Icon"
               className="contactIcon"
               width={100}
@@ -44,7 +47,7 @@ const Signature: React.FC = () => {
             rel="noopener noreferrer"
           >
             <Image
-              src="/LinkedIn.png"
+              src={`${assetPrefix}/LinkedIn.png`}
               alt="LinkedIn Icon"
               className="contactIcon"
               width={100}
