@@ -81,11 +81,13 @@ const Clock: React.FC = () => {
     }
   }, [toggle]); // Dependency on toggle to update the clock face display
 
+  const assetPrefix = process.env.NODE_ENV === 'production' ? '/NextJS-Clock-App' : '';
+
   return (
     <main>
       <div className="clock">
         <Image
-          src="/Clock Case.png"
+          src={`${assetPrefix}/Clock Case.png`}
           alt="Clock Case"
           className="clockCaseImage clockCentre"
           width={100}
@@ -106,7 +108,7 @@ const Clock: React.FC = () => {
             <p className="ten">10</p>
             <p className="eleven">11</p>
             <Image
-              src="/Signature.svg"
+              src={`${assetPrefix}/Signature.svg`}
               alt="Signature"
               className="signature clockCentre"
               width={100}
@@ -116,7 +118,7 @@ const Clock: React.FC = () => {
           </div>
           <div id="gears" className="gears">
             <Image
-              src="/Hour Hand Gear.svg"
+              src={`${assetPrefix}/Hour Hand Gear.svg`}
               alt="Hour Hand Gear"
               className="hourHandGearImage clockCentre"
               width={100}
@@ -124,7 +126,7 @@ const Clock: React.FC = () => {
               ref={hourHandGearRef}
             />
             <Image
-              src="/Signed Gear 3.svg"
+              src={`${assetPrefix}/Signed Gear 3.svg`}
               alt="Signed Gear Small"
               className="signedGearImageSmall"
               width={100}
@@ -132,7 +134,7 @@ const Clock: React.FC = () => {
               ref={signedGearSmallRef}
             />
             <Image
-              src="/Signed Gear.svg"
+              src={`${assetPrefix}/Signed Gear.svg`}
               alt="Signed Gear"
               className="signedGearImage"
               width={100}
@@ -140,7 +142,7 @@ const Clock: React.FC = () => {
               ref={signedGearRef}
             />
             <Image
-              src="/Minute Hand Gear.svg"
+              src={`${assetPrefix}/Minute Hand Gear.svg`}
               alt="Minute Hand Gear"
               className="minuteHandGearImage clockCentre"
               width={100}
@@ -148,7 +150,7 @@ const Clock: React.FC = () => {
               ref={minuteHandGearRef}
             />
             <Image
-              src="/Signed Gear 2.svg"
+              src={`${assetPrefix}/Signed Gear 2.svg`}
               alt="Signed Gear Bulkier"
               className="signedGearBulkierImage"
               width={100}
@@ -156,7 +158,7 @@ const Clock: React.FC = () => {
               ref={signedGearBulkierRef}
             />
             <Image
-              src="/Second Hand Gear.svg"
+              src={`${assetPrefix}/Second Hand Gear.svg`}
               alt="Second Hand Gear"
               className="secondHandGearImage clockCentre"
               width={100}
@@ -164,7 +166,7 @@ const Clock: React.FC = () => {
               ref={secondHandGearRef}
             />
             <Image
-              src="/Second Hand Gear 2.svg"
+              src={`${assetPrefix}/Second Hand Gear 2.svg`}
               alt="Second Hand Gear 2"
               className="secondHandGearImage2"
               width={100}
